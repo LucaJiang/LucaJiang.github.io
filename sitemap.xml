@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lucajiang.github.io/2020/11/04/my-first-artical/</loc>
+    <loc>https://lucajiang.github.io/2020/11/04/My-First-Article/</loc>
     
-    <lastmod>2020-11-04</lastmod>
+    <lastmod>2020-11-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lucajiang.github.io/2020/11/04/hello-world/</loc>
+    
+    <lastmod>2020-11-05</lastmod>
     
   </url>
   
@@ -52,13 +59,6 @@
   
   <url>
     <loc>https://lucajiang.github.io/404.html</loc>
-    
-    <lastmod>2020-11-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lucajiang.github.io/2020/11/04/hello-world/</loc>
     
     <lastmod>2020-11-04</lastmod>
     
