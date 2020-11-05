@@ -3,11 +3,11 @@
   <title>Jiang Wenxin&#39;s blog</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://lucajiang.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2020-11-04T11:45:46.258Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://lucajiang.github.io/"/>
+  <updated>2020-11-04T13:06:26.966Z</updated>
+  <id>https://lucajiang.github.io/</id>
   
   <author>
     <name>Jiangwx7</name>
@@ -17,9 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>my first artical</title>
+    <link href="https://lucajiang.github.io/2020/11/04/my-first-artical/"/>
+    <id>https://lucajiang.github.io/2020/11/04/my-first-artical/</id>
+    <published>2020-11-04T13:05:45.000Z</published>
+    <updated>2020-11-04T13:06:26.966Z</updated>
+    
+    <content type="html"><![CDATA[<p>HELLO~</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;HELLO~&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2020/11/04/hello-world/"/>
-    <id>http://example.com/2020/11/04/hello-world/</id>
+    <link href="https://lucajiang.github.io/2020/11/04/hello-world/"/>
+    <id>https://lucajiang.github.io/2020/11/04/hello-world/</id>
     <published>2020-11-04T11:45:46.257Z</published>
     <updated>2020-11-04T11:45:46.258Z</updated>
     
