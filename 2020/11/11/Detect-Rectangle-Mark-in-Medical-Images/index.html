@@ -17,20 +17,24 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>My First Article | JiangWX_Blog</title>
-  <meta name="description" content="HELLO~">
+  <title>Detect Rectangle Mark in Medical Images | JiangWX_Blog</title>
+  <meta name="description" content="Detect white rectangle mark in medical images, using morphological opening and Hough transform. The Chinese Version of readme, see here. Content Background Method Result  BackgroundMedical images ofte">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My First Article">
-<meta property="og:url" content="https://lucajiang.github.io/2020/11/04/My-First-Article/index.html">
+<meta property="og:title" content="Detect Rectangle Mark in Medical Images">
+<meta property="og:url" content="https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/index.html">
 <meta property="og:site_name" content="Jiang Wenxin&#39;s blog">
-<meta property="og:description" content="HELLO~">
+<meta property="og:description" content="Detect white rectangle mark in medical images, using morphological opening and Hough transform. The Chinese Version of readme, see here. Content Background Method Result  BackgroundMedical images ofte">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-11-04T13:05:45.000Z">
-<meta property="article:modified_time" content="2020-11-05T06:15:35.354Z">
+<meta property="og:image" content="https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/img/ori.jpg">
+<meta property="og:image" content="https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/img/result_method1.png">
+<meta property="article:published_time" content="2020-11-11T13:32:16.000Z">
+<meta property="article:modified_time" content="2020-11-11T13:40:38.480Z">
 <meta property="article:author" content="Jiangwx7">
+<meta property="article:tag" content="image processing">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/img/ori.jpg">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://lucajiang.github.io/2020/11/04/My-First-Article/index.html">
+  <link rel="canonical" href="https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Jiang Wenxin&#39;s blog" type="application/atom+xml">
   
@@ -306,14 +310,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-My-First-Article" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-Detect-Rectangle-Mark-in-Medical-Images" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      My First Article
+      Detect Rectangle Mark in Medical Images
     </h1>
   
 
@@ -321,29 +325,58 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/11/04/My-First-Article/" class="article-date">
-	  <time datetime="2020-11-04T13:05:45.000Z" itemprop="datePublished">2020-11-04</time>
+	<a href="/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/" class="article-date">
+	  <time datetime="2020-11-11T13:32:16.000Z" itemprop="datePublished">2020-11-11</time>
 	</a>
 </span>
         
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/image-processing/" rel="tag">image processing</a>
+  </span>
+
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/11/04/My-First-Article/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 481(字)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3(分)</span>
 	
 
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>HELLO~</p>
+        <p>Detect white rectangle mark in medical images, using morphological opening and Hough transform.</p>
+<p>The Chinese Version of readme, see <a target="_blank" rel="noopener" href="https://github.com/LucaJiang/Detect-Rectangle-Mark-in-Medical-Images/blob/master/README_zhCN.md">here</a>.</p>
+<h2 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h2><ul>
+<li><a href="#background">Background</a></li>
+<li><a href="#method">Method</a></li>
+<li><a href="#result">Result</a></li>
+</ul>
+<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>Medical images often have regions of interest marked by doctors. Generally speaking, before building a deep learning model, we need to manually select these areas, which is time-consuming and may introduce extra errors. This repo proposes a graphics-based method to select these areas automatically.</p>
+<p>Take this thyroid ultrasound(US) image for example. The black shadow in the middle is a thyroid nodule. The thin white box around it is a mark. We need to obtain images of areas deemed valuable by doctors and build models based on those areas. </p>
+<p align="center">
+<img src="img/ori.jpg" alt="ultrasound(US) images" width="250" height="250" />
+</p>
+
+<p>If the gray scale of the white box is stable. For example, it is a fixed value. We can easily locate the white box through a computer program. Unfortunately, in most cases, the gray scale would be affected by the background color. </p>
+<p>We generally use hough transform to detect straight lines. However, medical images often have interference elements. For example, in this case, the dividing line between the skin and muscles of the neck could be easily misjudged by the computer as part of the white box. That’s why hough transform can not be applied directly.</p>
+<p>Besides, to be honest, manual processing of this kind of images is also very laborious. Because the line is too thin.</p>
+<p>To sum up, it is difficult to detect  white rectangle mark in medical images. And I failed to find a suitable way to deal with such problem on the internet or papers. So I try my best to propose my own ideas on it.</p>
+<p>In the following sections, I propose a method based on morphological operations and hough transform. <em>BTW, I suggest that you should check it yourself after processing. Although this program works well, it could fail in some special cases.</em></p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p>In order to apply hough transform, we need to separate white line from interference background. So, firstly, we apply <strong>morphological opening</strong> on the <strong>gray scale images</strong>. The morphological open operation is an erosion followed by a dilation, using the same structuring element for both operations. For more details, see <a target="_blank" rel="noopener" href="https://www.mathworks.com/help/images/ref/imopen.html#f5-345703_seealso">here</a>.</p>
+<p>Then, we can easily detect the mark in current situation (see the middle row of result). Here, I apply <strong>hough transform</strong>, but you can use whatever you want. The theory of hough transform can be found <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Hough_transform">here</a>.</p>
+<p>The core MATLAB codes of this process are</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% get gray scale images</span></span><br><span class="line">img = rgb2gray(ori_img);</span><br><span class="line"></span><br><span class="line"><span class="comment">% morphological operations</span></span><br><span class="line">background = imopen(img, strel(<span class="string">&#x27;disk&#x27;</span>, disk_size));</span><br><span class="line">sub = imsubtract(img, background);</span><br><span class="line">ind = sub &gt;= min_sub;</span><br><span class="line">imshow(ind)</span><br><span class="line"></span><br><span class="line"><span class="comment">% hough transform</span></span><br><span class="line">[n, m] = <span class="built_in">size</span>(ind);</span><br><span class="line">[H,T,R] = hough(ind);</span><br><span class="line">P = houghpeaks(H, <span class="number">4</span>, <span class="string">&#x27;threshold&#x27;</span>, <span class="built_in">ceil</span>(<span class="number">0.2</span>*<span class="built_in">max</span>(H(:))));</span><br><span class="line">lines = houghlines(ind, T, R, P, <span class="string">&#x27;FillGap&#x27;</span>, </span><br><span class="line">                FillGap_value,<span class="string">&#x27;MinLength&#x27;</span>, MinLength_value);</span><br><span class="line"><span class="comment">% cropping along lines</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p>The results show as follows.</p>
+<p><img src="img/result_method1.png" alt="Result"></p>
 
       
     </div>
@@ -353,7 +386,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://lucajiang.github.io/2020/11/04/My-First-Article/" title="My First Article" target="_blank" rel="external">https://lucajiang.github.io/2020/11/04/My-First-Article/</a>
+      <a href="https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/" title="Detect Rectangle Mark in Medical Images" target="_blank" rel="external">https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -399,13 +432,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/" title="Detect Rectangle Mark in Medical Images"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2020/11/04/hello-world/" title="Hello World"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2020/11/04/My-First-Article/" title="My First Article"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
