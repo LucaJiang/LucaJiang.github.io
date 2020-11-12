@@ -25,14 +25,14 @@
 <meta property="og:site_name" content="Jiang Wenxin&#39;s blog">
 <meta property="og:description" content="Detect white rectangle mark in medical images, using morphological opening and Hough transform. The Chinese Version of readme, see here. Content Background Method Result MATLAB Code  BackgroundMedical">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://lucajiang.github.io/.io//ori.JPG">
-<meta property="og:image" content="https://lucajiang.github.io/.io//result_method1.PNG">
+<meta property="og:image" content="https://lucajiang.github.io/images/ori.JPG">
+<meta property="og:image" content="https://lucajiang.github.io/images/result_method1.PNG">
 <meta property="article:published_time" content="2020-11-11T13:32:16.000Z">
-<meta property="article:modified_time" content="2020-11-12T02:12:56.756Z">
+<meta property="article:modified_time" content="2020-11-12T02:47:08.270Z">
 <meta property="article:author" content="Jiangwx7">
 <meta property="article:tag" content="image processing">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://lucajiang.github.io/.io//ori.JPG">
+<meta name="twitter:image" content="https://lucajiang.github.io/images/ori.JPG">
   <!-- Canonical links -->
   <link rel="canonical" href="https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/index.html">
   
@@ -221,7 +221,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/image-processing/" rel="tag">image processing</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/image-processing/" rel="tag">image processing</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/survival-analysis/" rel="tag">survival analysis</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -231,7 +231,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="/tags/image-processing/" style="font-size: 13px;">image processing</a>
+      <a href="/tags/image-processing/" style="font-size: 13px;">image processing</a> <a href="/tags/survival-analysis/" style="font-size: 13px;">survival analysis</a>
     </div>
   </div>
 
@@ -240,7 +240,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">4</span></li></ul>
     </div>
   </div>
 
@@ -252,6 +252,21 @@
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2020/11/12/FraminghamCHDSurvivalAnalysis/" class="title">基于 Framingham 数据集冠心病生存分析</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-11-12T02:51:23.000Z" itemprop="datePublished">2020-11-12</time>
+              </p>
+            </div>
+          </li>
+          
           <li>
             
             <div class="item-inner">
@@ -338,6 +353,13 @@
 
 
         
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
 
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/#comments" class="article-comment-link">评论</a></span>
         
@@ -362,9 +384,9 @@
 </ul>
 <h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>Medical images often have regions of interest marked by doctors. Generally speaking, before building a deep learning model, we need to manually select these areas, which is time-consuming and may introduce extra errors. This repo proposes a graphics-based method to select these areas automatically.</p>
 <p>Take this thyroid ultrasound(US) image for example. The black shadow in the middle is a thyroid nodule. The thin white box around it is a mark. We need to obtain images of areas deemed valuable by doctors and build models based on those areas. </p>
-
+<!--  -->
 <p align="center">
-<img src="/.io//ori.JPG" alt="ultrasound(US) images" width="250" height="250">
+<img src="/images/ori.JPG" alt="ultrasound(US) images" width="250" height="250">
 </p>
 
 <p>If the gray scale of the white box is stable. For example, it is a fixed value. We can easily locate the white box through a computer program. Unfortunately, in most cases, the gray scale would be affected by the background color. </p>
@@ -379,7 +401,7 @@
 
 <h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p>The results show as follows.</p>
 
-<p><img src="/.io//result_method1.PNG" alt="Result"></p>
+<p><img src="/images/result_method1.PNG" alt="Result"></p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><p>MATLAB code available at <a target="_blank" rel="noopener" href="https://github.com/LucaJiang/Detect-Rectangle-Mark-in-Medical-Images/blob/master/code.m">here</a>.</p>
 <h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>The processing of locating the point after the Hough transform could be improved. Insert try-catch exception module, for instance. But the current processing effect has reached my requirements.</p>
 
@@ -436,6 +458,10 @@
   <div class="bar-inner">
   
   <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2020/11/12/FraminghamCHDSurvivalAnalysis/" title="基于 Framingham 数据集冠心病生存分析"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
     
     
     <li class="next">
@@ -565,6 +591,8 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
    
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 
 
 
