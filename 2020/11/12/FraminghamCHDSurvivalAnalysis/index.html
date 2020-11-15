@@ -50,7 +50,9 @@
     <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
   
   
-<meta name="generator" content="Hexo 5.2.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="/custom_css_source.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.2.0"></head>
 
 
 <body class="main-center" itemscope itemtype="http://schema.org/WebPage">
@@ -190,7 +192,7 @@
     	
         <li><a href="https://github.com/LucaJiang" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
         
-        <li><a href="mailto:jiangwx7@qq.com" target="_blank" title="E-Mail" data-toggle=tooltip data-placement=top><i class="icon icon-e-mail"></i></a></li>
+        <li><a href="mailto:jiangwx7@qq.com" target="_blank" title="Email" data-toggle=tooltip data-placement=top><i class="icon icon-email"></i></a></li>
         
         <li><a href="https://leetcode-cn.com/u/jiang-wenxin/" target="_blank" title="Leetcode" data-toggle=tooltip data-placement=top><i class="icon icon-leetcode"></i></a></li>
         
@@ -348,13 +350,11 @@
 
 
         
-	<span class="article-read hidden-xs">
-	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
-	    <span id="busuanzi_container_page_pv">
-			<span id="busuanzi_value_page_pv">0</span>
-		</span>
-	</span>
 
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="/2020/11/12/FraminghamCHDSurvivalAnalysis/" class="leancloud_visitors"  data-flag-title="基于 Framingham 数据集冠心病生存分析">0</span>
+    </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/11/12/FraminghamCHDSurvivalAnalysis/#comments" class="article-comment-link">评论</a></span>
         
@@ -513,7 +513,7 @@
     	
         <li><a href="https://github.com/LucaJiang" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
         
-        <li><a href="mailto:jiangwx7@qq.com" target="_blank" title="E-Mail" data-toggle=tooltip data-placement=top><i class="icon icon-e-mail"></i></a></li>
+        <li><a href="mailto:jiangwx7@qq.com" target="_blank" title="Email" data-toggle=tooltip data-placement=top><i class="icon icon-email"></i></a></li>
         
         <li><a href="https://leetcode-cn.com/u/jiang-wenxin/" target="_blank" title="Leetcode" data-toggle=tooltip data-placement=top><i class="icon icon-leetcode"></i></a></li>
         
@@ -566,9 +566,97 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
    
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+<!-- custom analytics part create by xiamo -->
+<script defer src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+<script defer>
+AV.init({
+  appId: '',
+  appKey: ''
+});
+
+function showTime(Counter) {
+	var query = new AV.Query(Counter);
+		var visitors= $('.leancloud_visitors');
+		query.greaterThanOrEqualTo("time", 0);		
+		query.find({
+			success: function(results) {
+				if (results.length == 0) {				
+					return;
+				}
+				var data = results;
+				visitors.each(function(){
+					var url = $(this).attr('id').trim();					
+					for (var i = 0; i < data.length; i++) {
+						var object = data[i];
+						var content = object.get('time');
+						var _url = object.get('url')
+						if(url == _url){
+							$(this).text(content);
+						}
+					}
+				})
+				
+			},
+			error: function(object, error) {
+				console.log("Error: " + error.code + " " + error.message);
+			}
+		});
+}
+
+function addCount(Counter) {
+	var Counter = AV.Object.extend("Counter");
+	url = $(".leancloud_visitors").attr('id').trim();
+	title = $(".leancloud_visitors").attr('data-flag-title').trim();
+	var query = new AV.Query(Counter);
+	query.equalTo("url", url);
+	query.find({
+		success: function(results) {
+			if (results.length > 0) {
+				var counter = results[0];
+				counter.fetchWhenSave(true);
+				counter.increment("time");
+				counter.save(null, {
+					success: function(counter) {
+						var content = counter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(counter, error) {
+						console.log('Failed to save Visitor num, with error message: ' + error.message);
+					}
+				});
+			} else {
+				var newcounter = new Counter();
+				newcounter.set("title", title);
+				newcounter.set("url", url);
+				newcounter.set("time", 1);
+				newcounter.save(null, {
+					success: function(newcounter) {
+					    console.log("newcounter.get('time')="+newcounter.get('time'));
+						var content = newcounter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(newcounter, error) {
+						console.log('Failed to create');
+					}
+				});
+			}
+		},
+		error: function(error) {
+			console.log('Error:' + error.code + " " + error.message);
+		}
+	});
+}
+$(function() {
+	var Counter = AV.Object.extend("Counter");
+	if ($('.leancloud_visitors').length == 1) {
+		addCount(Counter);
+	} else {
+		showTime(Counter);
+	}
+}); 
+</script>
 
 
 
