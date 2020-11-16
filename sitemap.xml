@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lucajiang.github.io/about/index.html</loc>
+    <loc>https://lucajiang.github.io/2020/11/12/FraminghamCHDSurvivalAnalysis/</loc>
     
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-11-16</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lucajiang.github.io/2020/11/12/FraminghamCHDSurvivalAnalysis/</loc>
+    <loc>https://lucajiang.github.io/2020/11/16/Kaggle-Mushroom-Dataset/</loc>
     
-    <lastmod>2020-11-14</lastmod>
+    <lastmod>2020-11-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lucajiang.github.io/about/index.html</loc>
+    
+    <lastmod>2020-11-15</lastmod>
     
   </url>
   
@@ -88,22 +95,22 @@
 
   <url>
     <loc>https://lucajiang.github.io/</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://lucajiang.github.io/tags/survival-analysis/</loc>
-    <lastmod>2020-11-15</lastmod>
+    <loc>https://lucajiang.github.io/tags/image-processing/</loc>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lucajiang.github.io/tags/image-processing/</loc>
-    <lastmod>2020-11-15</lastmod>
+    <loc>https://lucajiang.github.io/tags/statistics/</loc>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
