@@ -6,7 +6,7 @@
   <link href="https://lucajiang.github.io/atom.xml" rel="self"/>
   
   <link href="https://lucajiang.github.io/"/>
-  <updated>2020-11-16T02:32:46.050Z</updated>
+  <updated>2020-11-27T03:23:26.069Z</updated>
   <id>https://lucajiang.github.io/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Multivariate Statistics HW PCA</title>
+    <link href="https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/"/>
+    <id>https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/</id>
+    <published>2020-11-27T03:16:11.000Z</published>
+    <updated>2020-11-27T03:23:26.069Z</updated>
+    
+    <content type="html"><![CDATA[<p>Modern Multivariate Statistical Techniques习题解答c7 PCA&amp;CVA<a id="more"></a></p><div class="row">    <embed src="/images/mvc7.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Modern Multivariate Statistical Techniques习题解答c7 PCA&amp;amp;CVA&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="statistics" scheme="https://lucajiang.github.io/tags/statistics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Multivariate Statistics HW</title>
+    <link href="https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW/"/>
+    <id>https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW/</id>
+    <published>2020-11-27T03:10:00.000Z</published>
+    <updated>2020-11-27T03:23:18.537Z</updated>
+    
+    <content type="html"><![CDATA[<p>Modern Multivariate Statistical Techniques部分习题解答目录页<a id="more"></a></p><p>以下将会不定时更新中山大学2017级统计学多元统计平时作业</p><ul><li><img src="https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/" alt="Chapter 7: PCA&amp;CVA"></li><li><img src="https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/" alt="Chapter 8: LDA"></li><li><img src="https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/" alt="Chapter 9: CART"></li><li><img src="https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/" alt="Chapter 11: SVM"></li><li><img src="https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/" alt="Chapter 12: Clustering"></li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Modern Multivariate Statistical Techniques部分习题解答目录页&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="statistics" scheme="https://lucajiang.github.io/tags/statistics/"/>
+    
+  </entry>
   
   <entry>
     <title>Kaggle Mushroom Dataset</title>

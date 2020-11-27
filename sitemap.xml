@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/</loc>
+    
+    <lastmod>2020-11-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW/</loc>
+    
+    <lastmod>2020-11-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lucajiang.github.io/2020/11/12/FraminghamCHDSurvivalAnalysis/</loc>
     
     <lastmod>2020-11-16</lastmod>
@@ -95,7 +109,7 @@
 
   <url>
     <loc>https://lucajiang.github.io/</loc>
-    <lastmod>2020-11-18</lastmod>
+    <lastmod>2020-11-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -103,14 +117,14 @@
   
   <url>
     <loc>https://lucajiang.github.io/tags/image-processing/</loc>
-    <lastmod>2020-11-18</lastmod>
+    <lastmod>2020-11-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lucajiang.github.io/tags/statistics/</loc>
-    <lastmod>2020-11-18</lastmod>
+    <lastmod>2020-11-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
