@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/</loc>
+    
+    <lastmod>2020-11-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lucajiang.github.io/2020/11/16/Kaggle-Mushroom-Dataset/</loc>
     
     <lastmod>2020-11-30</lastmod>
@@ -66,13 +73,6 @@
   
   <url>
     <loc>https://lucajiang.github.io/2020/11/04/hello-world/</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/</loc>
     
     <lastmod>2020-11-14</lastmod>
     
@@ -144,13 +144,6 @@
 
   
   <url>
-    <loc>https://lucajiang.github.io/tags/image-processing/</loc>
-    <lastmod>2020-11-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lucajiang.github.io/tags/statistics/</loc>
     <lastmod>2020-11-30</lastmod>
     <changefreq>daily</changefreq>
@@ -159,6 +152,13 @@
   
   <url>
     <loc>https://lucajiang.github.io/tags/MultivariateStatistics/</loc>
+    <lastmod>2020-11-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lucajiang.github.io/tags/ImageProcessing/</loc>
     <lastmod>2020-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

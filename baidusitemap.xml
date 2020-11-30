@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/</loc>
+    <lastmod>2020-11-30</lastmod>
+  </url>
+  <url>
     <loc>https://lucajiang.github.io/2020/11/16/Kaggle-Mushroom-Dataset/</loc>
     <lastmod>2020-11-30</lastmod>
   </url>
@@ -34,10 +38,6 @@
   </url>
   <url>
     <loc>https://lucajiang.github.io/2020/11/04/hello-world/</loc>
-    <lastmod>2020-11-14</lastmod>
-  </url>
-  <url>
-    <loc>https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>
   <url>
