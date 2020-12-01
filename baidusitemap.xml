@@ -1,40 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/</loc>
-    <lastmod>2020-11-30</lastmod>
+    <loc>https://lucajiang.github.io/2020/11/12/FraminghamCHDSurvivalAnalysis/</loc>
+    <lastmod>2020-12-01</lastmod>
   </url>
   <url>
     <loc>https://lucajiang.github.io/2020/11/16/Kaggle-Mushroom-Dataset/</loc>
-    <lastmod>2020-11-30</lastmod>
+    <lastmod>2020-12-01</lastmod>
   </url>
   <url>
-    <loc>https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-LDA/</loc>
-    <lastmod>2020-11-30</lastmod>
+    <loc>https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW/</loc>
+    <lastmod>2020-12-01</lastmod>
   </url>
   <url>
-    <loc>https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/</loc>
+    <loc>https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/</loc>
     <lastmod>2020-11-30</lastmod>
-  </url>
-  <url>
-    <loc>https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-SVM/</loc>
-    <lastmod>2020-11-30</lastmod>
-  </url>
-  <url>
-    <loc>https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW/</loc>
-    <lastmod>2020-11-30</lastmod>
-  </url>
-  <url>
-    <loc>https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-Clustering/</loc>
-    <lastmod>2020-11-30</lastmod>
-  </url>
-  <url>
-    <loc>https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-CART/</loc>
-    <lastmod>2020-11-30</lastmod>
-  </url>
-  <url>
-    <loc>https://lucajiang.github.io/2020/11/12/FraminghamCHDSurvivalAnalysis/</loc>
-    <lastmod>2020-11-16</lastmod>
   </url>
   <url>
     <loc>https://lucajiang.github.io/2020/11/04/hello-world/</loc>

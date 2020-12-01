@@ -6,7 +6,7 @@
   <link href="https://lucajiang.github.io/atom.xml" rel="self"/>
   
   <link href="https://lucajiang.github.io/"/>
-  <updated>2020-11-30T08:02:17.846Z</updated>
+  <updated>2020-12-01T08:20:17.645Z</updated>
   <id>https://lucajiang.github.io/</id>
   
   <author>
@@ -17,116 +17,21 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Multivariate Statistics HW CART</title>
-    <link href="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-CART/"/>
-    <id>https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-CART/</id>
-    <published>2020-12-01T03:16:11.000Z</published>
-    <updated>2020-11-30T08:02:17.846Z</updated>
-    
-    <content type="html"><![CDATA[<p>Modern Multivariate Statistical Techniques习题解答c9 CART<a id="more"></a></p><div class="row">    <embed src="/images/mvhw/mvc9.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Modern Multivariate Statistical Techniques习题解答c9 CART&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="MultivariateStatistics" scheme="https://lucajiang.github.io/tags/MultivariateStatistics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Multivariate Statistics HW LDA</title>
-    <link href="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-LDA/"/>
-    <id>https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-LDA/</id>
-    <published>2020-12-01T03:16:11.000Z</published>
-    <updated>2020-11-30T08:02:54.255Z</updated>
-    
-    <content type="html"><![CDATA[<p>Modern Multivariate Statistical Techniques习题解答c8 LDA<a id="more"></a></p><div class="row">    <embed src="/images/mvhw/mvc8.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Modern Multivariate Statistical Techniques习题解答c8 LDA&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="MultivariateStatistics" scheme="https://lucajiang.github.io/tags/MultivariateStatistics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Multivariate Statistics HW Clustering</title>
-    <link href="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-Clustering/"/>
-    <id>https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-Clustering/</id>
-    <published>2020-12-01T03:16:11.000Z</published>
-    <updated>2020-11-30T08:02:27.124Z</updated>
-    
-    <content type="html"><![CDATA[<p>Modern Multivariate Statistical Techniques习题解答c12 Clustering<a id="more"></a></p><div class="row">    <embed src="/images/mvhw/mvc12.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Modern Multivariate Statistical Techniques习题解答c12 Clustering&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="MultivariateStatistics" scheme="https://lucajiang.github.io/tags/MultivariateStatistics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Multivariate Statistics HW SVM</title>
-    <link href="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-SVM/"/>
-    <id>https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-SVM/</id>
-    <published>2020-12-01T03:16:11.000Z</published>
-    <updated>2020-11-30T08:02:51.266Z</updated>
-    
-    <content type="html"><![CDATA[<p>Modern Multivariate Statistical Techniques习题解答c11 SVM<a id="more"></a></p><div class="row">    <embed src="/images/mvhw/mvc11.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Modern Multivariate Statistical Techniques习题解答c11 SVM&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="MultivariateStatistics" scheme="https://lucajiang.github.io/tags/MultivariateStatistics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Multivariate Statistics HW PCA</title>
-    <link href="https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/"/>
-    <id>https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/</id>
-    <published>2020-11-27T03:16:11.000Z</published>
-    <updated>2020-11-30T08:02:53.321Z</updated>
-    
-    <content type="html"><![CDATA[<p>Modern Multivariate Statistical Techniques习题解答c7 PCA&amp;CVA<a id="more"></a></p><div class="row">    <embed src="/images/mvhw/mvc7.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Modern Multivariate Statistical Techniques习题解答c7 PCA&amp;amp;CVA&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="MultivariateStatistics" scheme="https://lucajiang.github.io/tags/MultivariateStatistics/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Multivariate Statistics HW</title>
-    <link href="https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW/"/>
-    <id>https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW/</id>
-    <published>2020-11-27T03:10:00.000Z</published>
-    <updated>2020-11-30T08:02:48.534Z</updated>
+    <link href="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW/"/>
+    <id>https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW/</id>
+    <published>2020-12-01T03:00:00.000Z</published>
+    <updated>2020-12-01T08:20:17.645Z</updated>
     
-    <content type="html"><![CDATA[<p>Modern Multivariate Statistical Techniques部分习题解答目录页<a id="more"></a></p><p>以下是中山大学2017级统计学多元统计平时作业</p><ul><li><a href="https://lucajiang.github.io/2020/11/27/Multivariate-Statistics-HW-PCA/">Chapter 7: PCA&amp;CVA</a></li><li><a href="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-LDA/">Chapter 8: LDA</a></li><li><a href="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-CART/">Chapter 9: CART</a></li><li><a href="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-SVM/">Chapter 11: SVM</a></li><li><a href="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW-Clustering/">Chapter 12: Clustering</a></li></ul>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Modern Multivariate Statistical Techniques部分习题解答目录页&lt;/p&gt;</summary>
+    <content type="html"><![CDATA[<p>Modern Multivariate Statistical Techniques部分习题解答<a id="more"></a></p><p>以下是中山大学2017级统计学多元统计平时作业</p><ul><li><a href="#pcacva">PCA&amp;CVA</a></li><li><a href="#lda">LDA</a></li><li><a href="#cart">CART</a></li><li><a href="#svm">SVM</a></li><li><a href="#clustering">Clustering</a></li></ul><h1 id="PCA-amp-CVA"><a href="#PCA-amp-CVA" class="headerlink" title="PCA&amp;CVA"></a>PCA&amp;CVA</h1><div class="row">    <embed src="/images/mvhw/mvc7.pdf" width="100%" height="550" type="application/pdf"></div><h1 id="LDA"><a href="#LDA" class="headerlink" title="LDA"></a>LDA</h1><div class="row">    <embed src="/images/mvhw/mvc8.pdf" width="100%" height="550" type="application/pdf"></div><h1 id="CART"><a href="#CART" class="headerlink" title="CART"></a>CART</h1><div class="row">    <embed src="/images/mvhw/mvc9.pdf" width="100%" height="550" type="application/pdf"></div><h1 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h1><div class="row">    <embed src="/images/mvhw/mvc11.pdf" width="100%" height="550" type="application/pdf"></div><h1 id="Clustering"><a href="#Clustering" class="headerlink" title="Clustering"></a>Clustering</h1><div class="row">    <embed src="/images/mvhw/mvc12.pdf" width="100%" height="550" type="application/pdf"></div><p>另，大作业链接 <a href="https://lucajiang.github.io/2020/11/16/Kaggle-Mushroom-Dataset/">https://lucajiang.github.io/2020/11/16/Kaggle-Mushroom-Dataset/</a></p>]]></content>
     
     
+    <summary type="html">&lt;p&gt;Modern Multivariate Statistical Techniques部分习题解答&lt;/p&gt;</summary>
     
     
-    <category term="MultivariateStatistics" scheme="https://lucajiang.github.io/tags/MultivariateStatistics/"/>
+    
+    
+    <category term="Statistics" scheme="https://lucajiang.github.io/tags/Statistics/"/>
     
   </entry>
   
@@ -135,9 +40,9 @@
     <link href="https://lucajiang.github.io/2020/11/16/Kaggle-Mushroom-Dataset/"/>
     <id>https://lucajiang.github.io/2020/11/16/Kaggle-Mushroom-Dataset/</id>
     <published>2020-11-16T02:29:16.000Z</published>
-    <updated>2020-11-30T08:03:52.598Z</updated>
+    <updated>2020-12-01T08:20:30.137Z</updated>
     
-    <content type="html"><![CDATA[<p>中山大学2017级统计学多元统计期末作业<a id="more"></a></p><div class="row">    <embed src="/images/mushroom.pdf" width="100%" height="550" type="application/pdf"></div><p>附录中的代码请联系 <a href="mailto:&#x6a;&#x69;&#x61;&#110;&#103;&#119;&#x78;&#55;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;">&#x6a;&#x69;&#x61;&#110;&#103;&#119;&#x78;&#55;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;</a> 获取。</p>]]></content>
+    <content type="html"><![CDATA[<p>中山大学2017级统计学多元统计期末作业<a id="more"></a></p><div class="row">    <embed src="/images/mushroom.pdf" width="100%" height="550" type="application/pdf"></div><p>附录中的代码请联系 <a href="mailto:&#106;&#x69;&#97;&#x6e;&#103;&#x77;&#120;&#55;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#x6d;">&#106;&#x69;&#97;&#x6e;&#103;&#x77;&#120;&#55;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#x6d;</a> 获取。</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;中山大学2017级统计学多元统计期末作业&lt;/p&gt;</summary>
@@ -145,7 +50,7 @@
     
     
     
-    <category term="MultivariateStatistics" scheme="https://lucajiang.github.io/tags/MultivariateStatistics/"/>
+    <category term="Statistics" scheme="https://lucajiang.github.io/tags/Statistics/"/>
     
   </entry>
   
@@ -154,9 +59,9 @@
     <link href="https://lucajiang.github.io/2020/11/12/FraminghamCHDSurvivalAnalysis/"/>
     <id>https://lucajiang.github.io/2020/11/12/FraminghamCHDSurvivalAnalysis/</id>
     <published>2020-11-12T02:51:23.000Z</published>
-    <updated>2020-11-16T02:32:49.565Z</updated>
+    <updated>2020-12-01T08:20:40.219Z</updated>
     
-    <content type="html"><![CDATA[<p>中山大学2017级统计学生存分析期末作业<a id="more"></a></p><p>大作业分数：97，总分：94，排名：1。</p><div class="row">    <embed src="/images/CHD.pdf" width="100%" height="550" type="application/pdf"></div><p>附录中的代码请联系 <a href="mailto:&#x6a;&#x69;&#x61;&#x6e;&#x67;&#x77;&#x78;&#55;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;">&#x6a;&#x69;&#x61;&#x6e;&#x67;&#x77;&#x78;&#55;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;</a> 获取。</p>]]></content>
+    <content type="html"><![CDATA[<p>中山大学2017级统计学生存分析期末作业<a id="more"></a></p><p>大作业分数：97，总分：94，排名：1。</p><div class="row">    <embed src="/images/CHD.pdf" width="100%" height="550" type="application/pdf"></div><p>附录中的代码请联系 <a href="mailto:&#x6a;&#x69;&#97;&#x6e;&#103;&#119;&#120;&#x37;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;">&#x6a;&#x69;&#97;&#x6e;&#103;&#119;&#120;&#x37;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;</a> 获取。</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;中山大学2017级统计学生存分析期末作业&lt;/p&gt;</summary>
@@ -164,7 +69,7 @@
     
     
     
-    <category term="statistics" scheme="https://lucajiang.github.io/tags/statistics/"/>
+    <category term="Statistics" scheme="https://lucajiang.github.io/tags/Statistics/"/>
     
   </entry>
   
