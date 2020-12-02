@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lucajiang.github.io/404.html</loc>
+    
+    <lastmod>2020-12-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lucajiang.github.io/2020/11/04/hello-world/</loc>
+    
+    <lastmod>2020-12-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lucajiang.github.io/2020/11/12/FraminghamCHDSurvivalAnalysis/</loc>
     
     <lastmod>2020-12-01</lastmod>
@@ -33,13 +47,6 @@
     <loc>https://lucajiang.github.io/about/index.html</loc>
     
     <lastmod>2020-11-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lucajiang.github.io/2020/11/04/hello-world/</loc>
-    
-    <lastmod>2020-11-14</lastmod>
     
   </url>
   
@@ -87,13 +94,6 @@
   
   <url>
     <loc>https://lucajiang.github.io/books/index.html</loc>
-    
-    <lastmod>2020-11-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lucajiang.github.io/404.html</loc>
     
     <lastmod>2020-11-04</lastmod>
     
