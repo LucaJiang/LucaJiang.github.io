@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/</loc>
+    <lastmod>2020-12-23</lastmod>
+  </url>
+  <url>
     <loc>https://lucajiang.github.io/2020/12/21/%E8%AF%86%E5%88%AB%E5%A4%9A%E6%99%AE%E5%8B%92%E8%B6%85%E5%A3%B0%E5%9B%BE%E5%83%8F%E8%A1%80%E6%B5%81%E4%BF%A1%E5%8F%B7/</loc>
-    <lastmod>2020-12-21</lastmod>
+    <lastmod>2020-12-23</lastmod>
   </url>
   <url>
     <loc>https://lucajiang.github.io/2020/11/04/hello-world/</loc>
@@ -19,10 +23,6 @@
   <url>
     <loc>https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW/</loc>
     <lastmod>2020-12-01</lastmod>
-  </url>
-  <url>
-    <loc>https://lucajiang.github.io/2020/11/11/Detect-Rectangle-Mark-in-Medical-Images/</loc>
-    <lastmod>2020-11-30</lastmod>
   </url>
   <url>
     <loc>https://lucajiang.github.io/2020/11/04/My-First-Article/</loc>
