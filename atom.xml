@@ -6,7 +6,7 @@
   <link href="https://lucajiang.github.io/atom.xml" rel="self"/>
   
   <link href="https://lucajiang.github.io/"/>
-  <updated>2020-12-26T13:37:39.563Z</updated>
+  <updated>2020-12-26T13:43:30.079Z</updated>
   <id>https://lucajiang.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>高温作业服装的热传导数学模型</title>
+    <title>Heat Conduction Problem 高温作业服装的热传导数学模型</title>
     <link href="https://lucajiang.github.io/2020/12/26/cumcm/"/>
     <id>https://lucajiang.github.io/2020/12/26/cumcm/</id>
     <published>2020-12-26T13:24:16.000Z</published>
-    <updated>2020-12-26T13:37:39.563Z</updated>
+    <updated>2020-12-26T13:43:30.079Z</updated>
     
     <content type="html"><![CDATA[<p>2018年全国大学生数学建模竞赛A题全国二等奖论文<a id="more"></a></p><p>2018年。那年我大二，暑假刚学了MATLAB，运用还不太熟，主要靠帮助文档。能拿奖大概是运气好，在学校图书馆找到了靠谱的文献。还有就是我的编程水平还说得过去，模型复杂点也能实现。队友也给力，聊得来。</p><div class="row">    <embed src="/images/cumcm2018.pdf" width="100%" height="550" type="application/pdf"></div><p>其实，现在再看这篇论文，觉得无论是用的方法，还是写作、绘图都做得一般。不过，对于大二的学生来讲，第一次参加建模比赛就能做成这样，也算是不错了。</p>]]></content>
     
