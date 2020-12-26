@@ -20,21 +20,26 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Multivariate Statistics HW | JiangWX&#39;s Blog</title>
-  <meta name="description" content="Modern Multivariate Statistical Techniques部分习题解答">
+  <title>识别多普勒超声图像血流信号 | JiangWX&#39;s Blog</title>
+  <meta name="description" content="利用HSV提取血流信号">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Multivariate Statistics HW">
-<meta property="og:url" content="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW/index.html">
+<meta property="og:title" content="识别多普勒超声图像血流信号">
+<meta property="og:url" content="https://lucajiang.github.io/2020/12/21/doppler/index.html">
 <meta property="og:site_name" content="Jiang Wenxin&#39;s blog">
-<meta property="og:description" content="Modern Multivariate Statistical Techniques部分习题解答">
+<meta property="og:description" content="利用HSV提取血流信号">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-12-01T03:00:00.000Z">
-<meta property="article:modified_time" content="2020-12-01T08:20:17.645Z">
+<meta property="og:image" content="https://lucajiang.github.io/images/doppler/direct.png">
+<meta property="og:image" content="https://lucajiang.github.io/images/doppler/hsvrgb.png">
+<meta property="og:image" content="https://lucajiang.github.io/images/doppler/hsv1.png">
+<meta property="og:image" content="https://lucajiang.github.io/images/doppler/hsv2.png">
+<meta property="article:published_time" content="2020-12-21T06:37:13.000Z">
+<meta property="article:modified_time" content="2020-12-23T07:23:46.807Z">
 <meta property="article:author" content="Jiangwx7">
-<meta property="article:tag" content="Statistics">
+<meta property="article:tag" content="ImageProcessing">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lucajiang.github.io/images/doppler/direct.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW/index.html">
+  <link rel="canonical" href="https://lucajiang.github.io/2020/12/21/doppler/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Jiang Wenxin&#39;s blog" type="application/atom+xml">
   
@@ -315,14 +320,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-Multivariate-Statistics-HW" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-doppler" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      Multivariate Statistics HW
+      识别多普勒超声图像血流信号
     </h1>
   
 
@@ -330,24 +335,24 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/12/01/Multivariate-Statistics-HW/" class="article-date">
-	  <time datetime="2020-12-01T03:00:00.000Z" itemprop="datePublished">2020-12-01</time>
+	<a href="/2020/12/21/doppler/" class="article-date">
+	  <time datetime="2020-12-21T06:37:13.000Z" itemprop="datePublished">2020-12-21</time>
 	</a>
 </span>
         
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/Statistics/" rel="tag">Statistics</a>
+	<a class="article-tag-link-link" href="/tags/ImageProcessing/" rel="tag">ImageProcessing</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/12/01/Multivariate-Statistics-HW/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/12/21/doppler/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 60(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 325(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
@@ -357,62 +362,24 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>Modern Multivariate Statistical Techniques部分习题解答<a id="more"></a></p>
-<p>以下是中山大学2017级统计学多元统计平时作业</p>
-<ul>
-<li><a href="#pcacva">PCA&amp;CVA</a></li>
-<li><a href="#lda">LDA</a></li>
-<li><a href="#cart">CART</a></li>
-<li><a href="#svm">SVM</a></li>
-<li><a href="#clustering">Clustering</a></li>
-</ul>
-<h1 id="PCA-amp-CVA"><a href="#PCA-amp-CVA" class="headerlink" title="PCA&amp;CVA"></a>PCA&amp;CVA</h1>
-
-	<div class="row">
-    <embed src="/images/mvhw/mvc7.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
-
-<h1 id="LDA"><a href="#LDA" class="headerlink" title="LDA"></a>LDA</h1>
-
-	<div class="row">
-    <embed src="/images/mvhw/mvc8.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
-
-<h1 id="CART"><a href="#CART" class="headerlink" title="CART"></a>CART</h1>
-
-	<div class="row">
-    <embed src="/images/mvhw/mvc9.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
-
-<h1 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h1>
-
-	<div class="row">
-    <embed src="/images/mvhw/mvc11.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
-
-<h1 id="Clustering"><a href="#Clustering" class="headerlink" title="Clustering"></a>Clustering</h1>
-
-	<div class="row">
-    <embed src="/images/mvhw/mvc12.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
-
-<p>另，大作业链接 <a href="https://lucajiang.github.io/2020/11/16/Kaggle-Mushroom-Dataset/">https://lucajiang.github.io/2020/11/16/Kaggle-Mushroom-Dataset/</a></p>
-
+        <p>利用HSV提取血流信号<a id="more"></a></p>
+<h3 id="思路一-直接提取RGB图像中R-gt-B和R-lt-B部分"><a href="#思路一-直接提取RGB图像中R-gt-B和R-lt-B部分" class="headerlink" title="思路一: 直接提取RGB图像中R&gt;B和R&lt;B部分"></a>思路一: 直接提取RGB图像中R&gt;B和R&lt;B部分</h3><p><img src="/images/doppler/direct.png" alt="思路一结果"><br>遇到的困难:</p>
+<ol>
+<li>由于设备原因，部分图像偏紫色，因此很难正确识别彩色区域。</li>
+<li>即使可以正确识别彩色区域，因图像受压缩影响，无法正确判断边界。</li>
+</ol>
+<h3 id="思路二：先提取HSV图像中高H部分，再提取RGB图像中R-gt-B和R-lt-B部分"><a href="#思路二：先提取HSV图像中高H部分，再提取RGB图像中R-gt-B和R-lt-B部分" class="headerlink" title="思路二：先提取HSV图像中高H部分，再提取RGB图像中R&gt;B和R&lt;B部分"></a>思路二：先提取HSV图像中高H部分，再提取RGB图像中R&gt;B和R&lt;B部分</h3><p>具体地，利用彩色区域和白色区域高H，先将这些区域取出。再判断R和B大小，若R&gt;B则为红色，R=B则为白色，R&lt;B为蓝色。</p>
+<p><img src="/images/doppler/hsvrgb.png" alt="思路二结果"><br>此时大部分图像均能正常识别。</p>
+<p>遇到的困难:</p>
+<p>这一方法还是会受思路一提到的第一个困难的影响，部分图像无法正常识别。</p>
+<h3 id="思路三：完全利用HSV来识别"><a href="#思路三：完全利用HSV来识别" class="headerlink" title="思路三：完全利用HSV来识别"></a>思路三：完全利用HSV来识别</h3><p><img src="/images/doppler/hsv1.png" alt="思路三结果"><br><img src="/images/doppler/hsv2.png" alt="思路三结果"><br>此时，所有图像均能正确识别。具体流程：</p>
+<ol>
+<li>将图片转为HSV格式</li>
+<li>利用亮度V和饱和度S确定彩色区域</li>
+<li>利用H确定是红色还是蓝色</li>
+</ol>
+<p>MATLAB代码：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">rgb = imread(...);</span><br><span class="line">imshow(rgb)</span><br><span class="line">hsv = <span class="built_in">rgb2hsv</span>(rgb);</span><br><span class="line">v = hsv(:,:,<span class="number">3</span>) &gt; <span class="number">0.70</span>;</span><br><span class="line">s = hsv(:,:,<span class="number">2</span>) &gt; <span class="number">0.15</span>;</span><br><span class="line">hred = hsv(:,:,<span class="number">1</span>) &lt; <span class="number">0.5</span>;</span><br><span class="line">hblue = hsv(:,:,<span class="number">1</span>) &gt; <span class="number">0.5</span>;</span><br><span class="line">ind = v &amp; s;</span><br><span class="line">rind = ind &amp; hred;</span><br><span class="line">bind = ind &amp; hblue;</span><br><span class="line">imshow(rind)</span><br><span class="line">imshow(bind)</span><br></pre></td></tr></table></figure>
       
     </div>
     <div class="article-footer">
@@ -421,7 +388,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW/" title="Multivariate Statistics HW" target="_blank" rel="external">https://lucajiang.github.io/2020/12/01/Multivariate-Statistics-HW/</a>
+      <a href="https://lucajiang.github.io/2020/12/21/doppler/" title="识别多普勒超声图像血流信号" target="_blank" rel="external">https://lucajiang.github.io/2020/12/21/doppler/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -468,12 +435,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2020/12/21/doppler/" title="识别多普勒超声图像血流信号"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2020/12/26/cumcm/" title="高温作业服装的热传导数学模型"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2020/11/16/Kaggle-Mushroom-Dataset/" title="Kaggle Mushroom Dataset Analysis"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2020/12/01/Multivariate-Statistics-HW/" title="Multivariate Statistics HW"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
