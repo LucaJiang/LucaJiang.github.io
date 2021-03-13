@@ -6,7 +6,7 @@
   <link href="https://lucajiang.github.io/atom.xml" rel="self"/>
   
   <link href="https://lucajiang.github.io/"/>
-  <updated>2021-03-10T08:33:18.087Z</updated>
+  <updated>2021-03-10T08:35:10.495Z</updated>
   <id>https://lucajiang.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>openCV 无法读取图片：诊断及处理方法</title>
+    <title>OpenCV 无法读取图片：诊断及处理方法</title>
     <link href="https://lucajiang.github.io/2021/03/10/CVimCantRead/"/>
     <id>https://lucajiang.github.io/2021/03/10/CVimCantRead/</id>
     <published>2021-03-10T08:02:57.000Z</published>
-    <updated>2021-03-10T08:33:18.087Z</updated>
+    <updated>2021-03-10T08:35:10.495Z</updated>
     
     <content type="html"><![CDATA[<p>解决openCV图片读取相关报错<a id="more"></a></p><ul><li><a href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0">问题描述</a></li><li><a href="#%E8%AF%8A%E6%96%AD">诊断</a></li><li><a href="#%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95">处理方法</a></li></ul><h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>使用python 3.6 openCV 4.4 时，cv2.cvtColor()报错：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cv2.error: OpenCV(4.4.0)</span><br><span class="line">C:\Users\appveyor\AppData\Local\Temp\1\pip-req-build-jmqlme5z\opencv\modules\imgproc\src\color.cpp:182: </span><br><span class="line">error: (-215:Assertion failed) !_src.empty() in function &#39;cv::cvtColor&#39;</span><br></pre></td></tr></table></figure><p>以及cv2.imshow()报错：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cv2.error: C:\projects\opencv-python\opencv\modules\highgui\src\window.cpp:325: </span><br><span class="line">error: (-215) size.width&gt;0 &amp;&amp; size.height&gt;0 in function cv::imshow</span><br></pre></td></tr></table></figure><h1 id="诊断"><a href="#诊断" class="headerlink" title="诊断"></a>诊断</h1><p>使用cv2.imread()读取图片后，print(<em>读取的图片</em>)，观察输出结果是否为”None”。如果为”None”，说明图片根本就没读进去。需要注意的是<strong>imread没有读到图片，也不会报错</strong>。但是后续图片处理就会报错。</p><h1 id="处理方法"><a href="#处理方法" class="headerlink" title="处理方法"></a>处理方法</h1><p>发现了问题是由图片读取失败导致，那就好解决了。可以按照以下步骤：</p><ol><li>检查路径是否出错。需要注意以下两种情况：<ol><li>路径中有中文-&gt;方案A；</li><li>路径中有“\”-&gt;方案B；</li></ol></li><li>检查图片是否存在。<ol><li>若不存在图片，则…；</li><li>图片名包括中文-&gt;方案A；</li></ol></li></ol><p>解决方案A：</p><p><strong>要注意，路径或图片名有中文时是不可以直接用imread的哦</strong>。可以使用以下函数：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def cv_imread(file_path):</span><br><span class="line">    cv_img &#x3D; cv2.imdecode(np.fromfile(file_path,dtype&#x3D;np.uint8),-1)</span><br><span class="line">    return cv_img</span><br></pre></td></tr></table></figure><p>代码来自：<a href="https://www.zhihu.com/question/67157462/answer/251754530">https://www.zhihu.com/question/67157462/answer/251754530</a></p><p>解决方案B：</p><p>如果代码中的路径有“\”，可能会被识别为逃逸符，建议改成“\”。</p>]]></content>
     
